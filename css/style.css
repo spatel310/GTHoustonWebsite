@@ -485,8 +485,8 @@ p {
     width: 40px;
     height: 40px;
     text-align: center;
-
-#portfolio-grid .mix {
+}
+.portfolio-grid .mix {
     opacity: 0;
     display: none;
 }
