@@ -39,11 +39,17 @@
         });
     });
 
-
+	 /*
+    Function for adding elements
+    ************************************/
+	
+	appendThumbnails();
+	
+	
     //Initialize header slider.
     $('#da-slider').cslider();
 
-    //Initial mixitup, used for animated filtering portgolio.
+    //Initial mixitup, used for animated filtering portfolio.
     $('#portfolio-grid').mixitup({
         'onMixStart': function (config) {
             $('div.toggleDiv').hide();
@@ -105,12 +111,7 @@
         }
     });
 
-	 /*
-    Function for adding elements
-    ************************************/
-	
-	appendThumbnails();
-	
+
 	
     /*
     Function for scroliing to top
@@ -422,11 +423,11 @@ function makeThumbnail() {
     // Append new elements
 
     var targetElement = $('body ul.thumbnails.row');
-    var item1 = $("<li class='span4 mix social1'>")
+    var item1 = $("<li class='span4 mix social1 mix_all'>")
     item1.append(
          $('<div/>', {'class': 'thumbnail'}).append(
              $('<img/>', {'src': 'images/Portfolio01.png'}, {'alt':'project 1'})
-             ).append($('<a/>', {'href':'#single-project'}, {'class':'more show_hide'}, {'rel':'#slidingDiv10'}).append($('<i/>', {'class':'icon-plus'}))
+             ).append($('<a/>', {'href':'#single-project',"class":'more show_hide','rel':'#slidingDiv10'}).append($('<i/>', {'class':'icon-plus'}))
              ).append($('<h3/>', {'text':'Thumbnail SUCCESSLABEL'})
              ).append($('<p/>',{'text':'Thumbnail SUCCESSCAPTION...'})
              ).append($('<div/>',{'class':'mask'})));
@@ -436,12 +437,12 @@ function makeThumbnail() {
     // Append new elements
 
     var targetElement = $('body ul.thumbnails.row');
-    var item1 = $("<li class='span4 mix social1'>")
+    var item1 = $("<li class='span4 mix social1 mix_all'>")
     item1.append(
          $('<div/>', {'class': 'thumbnail'}
 		 ).append(
 				 $('<img/>', {'src': 'images/Portfolio01.png'}, {'alt':'project 1'})
-				 ).append($('<a/>', {'href':'#single-project'}, {'class':'more show_hide'}, {'rel':'#slidingDiv11'}).append($('<i/>', {'class':'icon-plus'}))
+				 ).append($('<a/>', {'href':'#single-project',"class":'more show_hide','rel':'#slidingDiv11'}).append($('<i/>', {'class':'icon-plus'}))
 				 ).append($('<h3/>', {'text':'Thumbnail SUCCESSLABEL1'})
 				 ).append($('<p/>',{'text':'Thumbnail SUCCESSCAPTION1...'})
 				 ).append($('<div/>',{'class':'mask'})));
